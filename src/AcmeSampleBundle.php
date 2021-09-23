@@ -14,7 +14,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class AcmeSampleBundle extends Bundle
 {
-    public function getParent()
+    public function getPath() : string
     {
+	    return \dirname(__DIR__);
     }
 }
